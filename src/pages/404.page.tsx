@@ -1,6 +1,4 @@
-import Image from 'next/image';
-import { FiChevronRight } from 'react-icons/fi';
-import { MdWbTwilight } from 'react-icons/md';
+import { HiOutlineArrowNarrowLeft } from 'react-icons/hi';
 
 import BaseLink from '@/components/links/BaseLink';
 import Typography from '@/components/typography/Typography';
@@ -8,41 +6,26 @@ import Typography from '@/components/typography/Typography';
 export default function NotFoundPage() {
   return (
     <main>
-      <section className='relative h-screen overflow-clip'>
-        <Image
-          src='/images/bungablack.png'
-          width={1935}
-          height={2009}
-          alt='bunga'
-          className='absolute right-0 top-0 w-[40rem] -translate-y-[45%] translate-x-[45%] opacity-20'
-        />
-        <Image
-          src='/images/bungablack.png'
-          width={1935}
-          height={2009}
-          alt='bunga'
-          className='absolute bottom-0 left-0 w-[40rem] -translate-x-[45%] translate-y-[45%] opacity-20'
-        />
-        <div className='flex h-full w-full -translate-y-6 flex-col items-center justify-center gap-y-4'>
-          <MdWbTwilight
-            size={70}
-            className='drop-shadow-glow animate-pulse text-blue-500'
-          />
+      <section className='relative h-screen overflow-clip bg-[#201F1F] text-white'>
+        <div className='flex h-full w-full -translate-y-6 flex-col items-center justify-center gap-y-1'>
           <Typography
             variant='k0'
-            className='font-primary text-5xl text-gray-700 md:text-8xl'
+            className='bg-gradient-to-tr from-blue-500 to-blue-400 bg-clip-text font-libre-caslon-condensed text-9xl text-transparent md:text-8xl'
           >
             404
           </Typography>
+          <Typography variant='s0' className='pb-0 text-center font-adelphe'>
+            The page you&#39;re looking for does not exist.
+          </Typography>
 
-          <div className='mt-4 flex items-center'>
+          <div className='mt-4 flex items-center gap-x-1'>
+            <HiOutlineArrowNarrowLeft size={22} />
             <BaseLink
               href='/'
               className='font-primary text-lg underline decoration-white underline-offset-2 transition-colors duration-150 hover:decoration-gray-600'
             >
-              Kembali ke halaman utama
+              Go Back
             </BaseLink>
-            <FiChevronRight size={22} />
           </div>
         </div>
       </section>
