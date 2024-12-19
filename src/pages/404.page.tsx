@@ -8,22 +8,20 @@ export default function NotFoundPage() {
     <main>
       <section className='relative h-screen overflow-clip bg-[#201F1F] text-white'>
         <div className='flex h-full w-full -translate-y-6 flex-col items-center justify-center gap-y-1'>
-          <Typography
-            variant='k0'
-            className='bg-gradient-to-tr from-blue-500 to-blue-400 bg-clip-text font-libre-caslon-condensed text-9xl text-transparent md:text-8xl'
-          >
+          <Typography variant='s3'>ERROR</Typography>
+          <h1 className='bg-gradient-to-tr from-blue-500 to-blue-400 bg-clip-text font-libre-caslon-condensed text-[10rem] leading-none text-transparent sm:text-[6rem] md:text-[9rem]'>
             404
-          </Typography>
-          <Typography variant='s0' className='pb-0 text-center font-adelphe'>
+          </h1>
+          <Typography variant='s0' className='mb-0 text-center font-adelphe'>
             The page you&#39;re looking for does not exist.
           </Typography>
 
-          <div className='mt-4 flex items-center gap-x-1'>
-            <HiOutlineArrowNarrowLeft size={22} />
+          <div className='flex items-center gap-x-1'>
             <BaseLink
               href='/'
-              className='font-primary text-lg underline decoration-white underline-offset-2 transition-colors duration-150 hover:decoration-gray-600'
+              className='flex items-center gap-x-1 font-primary text-lg underline decoration-white underline-offset-2 transition-colors duration-150 hover:decoration-gray-600'
             >
+              <HiOutlineArrowNarrowLeft size={22} />
               Go Back
             </BaseLink>
           </div>
