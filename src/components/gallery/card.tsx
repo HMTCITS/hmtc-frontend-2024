@@ -15,11 +15,15 @@ export default function galleryCard() {
         nunc id aliquam. Vivamus luctus urna sed urna ultricies ac tempor dui
         sagittis.
       </Typography>
-      <BaseLink href='/gallery' className='flex flex-row justify-end gap-x-1'>
-        <Typography variant='s2' className='text-right underline'>
+      <BaseLink
+        href='/gallery'
+        className='relative flex flex-row justify-end gap-x-1'
+      >
+        <Typography variant='s2' className='text-right'>
           See More
         </Typography>
         <HiArrowLongRight size={22} />
+        <span className='absolute bottom-0 left-[58%] w-[40%] border-b-2 border-current'></span>
       </BaseLink>
     </div>
   );

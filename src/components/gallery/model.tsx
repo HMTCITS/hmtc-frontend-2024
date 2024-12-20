@@ -18,9 +18,12 @@ export default function Model() {
           name=''
           id=''
           placeholder='NRP'
-          className='w-full rounded-sm px-2 py-1 outline outline-offset-2'
+          className='w-full rounded-sm px-2 py-1 outline outline-offset-2 outline-zinc-500'
         />
-        <button type='submit' className='w-100 mt-5 text-center underline'>
+        <button
+          type='submit'
+          className='w-100 mt-5 text-center font-medium underline underline-offset-4'
+        >
           Submit
         </button>
       </form>
